@@ -1,9 +1,5 @@
 package com.gui.practise.stock;
 
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.List;
-
 public class NumberTeset {
 
 	public static void main(String[] args) {
@@ -63,31 +59,40 @@ public class NumberTeset {
 		// list.add("test222");
 		// System.out.println(JSON.toJSON(list));
 
-		List<String> list1 = new ArrayList<String>();
-		list1.add("1");
-		list1.add("2");
-		list1.add("3");
-
-		List<String> list2 = new ArrayList<String>();
-		list2.add("2");
-		list2.add("3");
-		list2.add("4");
-
-		// 并集
-		// list1.addAll(list2);
-		// 交集
-		// list1.retainAll(list2);
-		// 差集
-		list1.removeAll(list2);
-		// 无重复并集
-		// list2.removeAll(list1);
-		// list1.addAll(list2);
-
-		Iterator<String> it = list1.iterator();
-		while (it.hasNext()) {
-			System.out.println(it.next());
-
+		// List<String> list1 = new ArrayList<String>();
+		// list1.add("1");
+		// list1.add("2");
+		// list1.add("3");
+		//
+		// List<String> list2 = new ArrayList<String>();
+		// list2.add("2");
+		// list2.add("3");
+		// list2.add("4");
+		//
+		// // 并集
+		// // list1.addAll(list2);
+		// // 交集
+		// // list1.retainAll(list2);
+		// // 差集
+		// list1.removeAll(list2);
+		// // 无重复并集
+		// // list2.removeAll(list1);
+		// // list1.addAll(list2);
+		//
+		// Iterator<String> it = list1.iterator();
+		// while (it.hasNext()) {
+		// System.out.println(it.next());
+		//
+		// }
+		Long id = 12L;
+		StringBuffer code = new StringBuffer();
+		int numLen = String.valueOf(id).length();
+		if (numLen < 4) {
+			for (int i = 0; i < 4 - numLen; i++) {
+				code.append("0");
+			}
 		}
+		System.out.println(code.toString());
 	}
 
 }
