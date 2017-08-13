@@ -1,6 +1,8 @@
 package com.gui.practise.stock;
 
-public class NumberTeset {
+import java.util.Date;
+
+public class NumberTest {
 
 	public static void main(String[] args) {
 		// System.out.println(Math.rint(166.6));
@@ -84,15 +86,26 @@ public class NumberTeset {
 		// System.out.println(it.next());
 		//
 		// }
-		Long id = 12L;
-		StringBuffer code = new StringBuffer();
-		int numLen = String.valueOf(id).length();
-		if (numLen < 4) {
-			for (int i = 0; i < 4 - numLen; i++) {
-				code.append("0");
-			}
-		}
-		System.out.println(code.toString());
+		// Long id = 12L;
+		// StringBuffer code = new StringBuffer();
+		// int numLen = String.valueOf(id).length();
+		// if (numLen < 4) {
+		// for (int i = 0; i < 4 - numLen; i++) {
+		// code.append("0");
+		// }
+		// }
+		// System.out.println(code.toString());
+		
+		// String season = "1";
+		// List<String> list = Arrays.asList(season.split(","));
+		// for (String str : list) {
+		// System.out.println(str);
+		// }
+		//
+		// String code = "M-G0017-YQ100066";
+		// System.out.println(code.substring(code.length() - 6, code.length()));
+		
+		System.out.println(new Date().getTime());
 	}
 
 }
