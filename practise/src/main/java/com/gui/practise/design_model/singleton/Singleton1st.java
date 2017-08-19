@@ -3,6 +3,8 @@ package com.gui.practise.design_model.singleton;
 /**
  * 饿汉式
  * 
+ * 线程安全
+ * 
  * @author wuhoujian
  *
  */
