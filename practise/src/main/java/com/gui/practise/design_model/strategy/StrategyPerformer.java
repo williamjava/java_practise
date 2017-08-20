@@ -18,5 +18,4 @@ public class StrategyPerformer {
 		// 执行第三个策略
 		new StrategyContext(new ThirdStrategy()).operate();
 	}
-
 }
