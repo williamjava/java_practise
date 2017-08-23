@@ -6,7 +6,7 @@ package com.gui.practise.design_model.factory.abstractfactory;
  * @author wuhoujian
  *
  */
-public abstract class AbstractYellowHuman implements IHuman {
+public abstract class AbstractYellowHuman extends IHuman {
 
 	public void getColor() {
 		System.out.println("黄种人的皮肤是黄色的。。。");

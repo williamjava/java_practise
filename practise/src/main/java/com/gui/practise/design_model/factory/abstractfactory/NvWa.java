@@ -21,33 +21,24 @@ public class NvWa {
 		// 开始在每一个工厂，使用不同的生产线创建具体的人种
 		System.out.println("所有男性都在这里。。。。");
 		IHuman maleYellowHuman = maleFactory.createYellowHuman();
-		startAction(maleYellowHuman);
+		maleYellowHuman.startAction();
 		IHuman maleWhiteHuman = maleFactory.createWhiteHuman();
-		startAction(maleWhiteHuman);
+		maleWhiteHuman.startAction();
 		IHuman maleBlackHuman = maleFactory.createBlackHuman();
-		startAction(maleBlackHuman);
+		maleBlackHuman.startAction();
 
 		System.out.println();
 		System.out.println("所有女性都在这里。。。。");
 		IHuman femaleYellowHuman = femaleFactory.createYellowHuman();
-		startAction(femaleYellowHuman);
+		femaleYellowHuman.startAction();
 		IHuman femaleWhiteHuman = femaleFactory.createWhiteHuman();
-		startAction(femaleWhiteHuman);
+		femaleWhiteHuman.startAction();
 		IHuman femaleBlackHuman = femaleFactory.createBlackHuman();
-		startAction(femaleBlackHuman);
+		femaleBlackHuman.startAction();
 
 		System.out.println();
 		System.out.println("所有中性都在这里。。。。");
 		IHuman neturalYellowHuman = neturalFactory.createYellowHuman();
-		startAction(neturalYellowHuman);
-	}
-
-	/**
-	 * 人开始活动
-	 */
-	private static void startAction(IHuman human) {
-		human.getColor();
-		human.talk();
-		human.getSex();
+		neturalYellowHuman.startAction();
 	}
 }

@@ -106,6 +106,9 @@ public class NumberTest {
 		// System.out.println(code.substring(code.length() - 6, code.length()));
 		
 		System.out.println(new Date().getTime());
+		
+		String str = "test";
+		System.out.println(str.lastIndexOf(',') > -1);
 	}
 
 }

@@ -1,9 +1,18 @@
 package com.gui.practise.design_model.factory.abstractfactory;
 
-public interface IHuman {
-	void getColor();
+public abstract class IHuman {
+	abstract void getColor();
 
-	void talk();
-	
-	void getSex();
+	abstract void talk();
+
+	abstract void getSex();
+
+	/**
+	 * 人类开始活动
+	 */
+	void startAction() {
+		this.getSex();
+		this.getColor();
+		this.talk();
+	}
 }
