@@ -1,7 +1,5 @@
 package com.gui.practise.stock;
 
-import java.util.Date;
-
 public class NumberTest {
 
 	public static void main(String[] args) {
@@ -95,7 +93,7 @@ public class NumberTest {
 		// }
 		// }
 		// System.out.println(code.toString());
-		
+
 		// String season = "1";
 		// List<String> list = Arrays.asList(season.split(","));
 		// for (String str : list) {
@@ -104,11 +102,18 @@ public class NumberTest {
 		//
 		// String code = "M-G0017-YQ100066";
 		// System.out.println(code.substring(code.length() - 6, code.length()));
-		
-		System.out.println(new Date().getTime());
-		
-		String str = "test";
-		System.out.println(str.lastIndexOf(',') > -1);
+
+		// System.out.println(new Date().getTime());
+		//
+		// String str = "test";
+		// System.out.println(str.lastIndexOf(',') > -1);
+		//
+		// Integer number1 = 200;
+		// Integer number2 = 200;
+		// System.out.println(number1 == number2);
+
+		String str = new String("abcde");
+		System.out.println(str.getBytes());
 	}
 
 }
