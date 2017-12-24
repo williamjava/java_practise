@@ -12,24 +12,29 @@ package com.gui.practise.stock;
  */
 public class TwoStageStockAnalysis {
 	public static void main(String[] args) {
+		// 计算光明乳业每股真实股价
+		System.out.println("光明乳业");
+		double guangmingPerStockVal = calculatePerStockValue(5.29, 0.1, 0.05, 0.09, 10, 12.244875);
+		System.out.println(guangmingPerStockVal);
+
 		// 计算美的的内在价值和每股真实股价
 		System.out.println("美的集团");
 		double meiDiCompanyValue = calculateCompanyTrueValue(146.84, 0.1, 0.05, 0.1, 3);
-		double meiDiPerStockValue = calculatePerStockValue(146.84, 0.1, 0.05, 0.1, 1, 64.66);
+		double meiDiPerStockValue = calculatePerStockValue(146.84, 0.1, 0.05, 0.1, 2, 64.66);
 
 		System.out.println(meiDiCompanyValue);
 		System.out.println(meiDiPerStockValue);
 
 		System.out.println("格力电器：");
-		double geLiPerStockValue = calculatePerStockValue(154.20, 0.1, 0.05, 0.1, 1, 60.15);
+		double geLiPerStockValue = calculatePerStockValue(154.61, 0.1, 0.05, 0.09, 10, 60.1573);
 		System.out.println(geLiPerStockValue);
-		
+
 		System.out.println("永辉超市：");
-		double yongHuiPerStockValue = calculatePerStockValue(12.42, 0.1, 0.05, 0.1, 1, 95.7);
+		double yongHuiPerStockValue = calculatePerStockValue(13.92, 0.1, 0.05, 0.09, 1, 95.7046);
 		System.out.println(yongHuiPerStockValue);
-		
+
 		System.out.println("海康威视：");
-		double haiKangPerStockValue = calculatePerStockValue(74.22, 0.1, 0.05, 0.1, 1, 61.55);
+		double haiKangPerStockValue = calculatePerStockValue(74.22, 0.1, 0.05, 0.09, 3, 61.55);
 		System.out.println(haiKangPerStockValue);
 
 		// 测试

@@ -1,7 +1,11 @@
 package com.gui.practise.design_model.singleton;
 
 /**
- * 饿汉式
+ * 饿汉式（类初始化的时候便创建类的实例）
+ * 
+ * 最简单的方式
+ * 
+ * 存在的问题：无论这个类是否被使用，都会创建一个实例
  * 
  * 线程安全
  * 

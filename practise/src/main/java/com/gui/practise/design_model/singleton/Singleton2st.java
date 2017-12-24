@@ -3,7 +3,9 @@ package com.gui.practise.design_model.singleton;
 /**
  * 懒汉式
  * 
- * 线程不安全
+ * 延迟加载，需要的时候才进行实例的创建，解决饿汉式存在的问题。
+ * 
+ * 存在的问题：该方式在单线程的情况不会有问题，如果式多线程环境，就会出现线程不安全的问题。
  * 
  * @author wuhoujian
  *

@@ -1,5 +1,8 @@
 package com.gui.practise.stock;
 
+import java.math.BigDecimal;
+import java.util.Date;
+
 public class NumberTest {
 
 	public static void main(String[] args) {
@@ -114,6 +117,27 @@ public class NumberTest {
 
 		String str = new String("abcde");
 		System.out.println(str.getBytes());
+
+		System.out.println(new Date().getTime());
+
+		// System.out.println(new Date(Long.valueOf("1507862308320")));
+
+		// Integer num = 16;
+		// System.out.println(num << 2);
+		//
+		// List<String> list = new ArrayList<String>();
+		// list.add("1");
+		// list.add("2");
+		// for (String item : list) {
+		// if ("2".equals(item)) {
+		// list.remove(item);
+		// }
+		// }
+		// System.out.println(list);
+
+		// BigDecimal price =new BigDecimal(1.00);
+
+		System.out.println(new Date().getTime());
 	}
 
 }
