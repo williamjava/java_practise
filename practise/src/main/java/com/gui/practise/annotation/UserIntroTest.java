@@ -12,6 +12,7 @@ import java.lang.reflect.Method;
  */
 public class UserIntroTest {
 
+	@SuppressWarnings("rawtypes")
 	public static void main(String[] args) {
 		Class userClass = User.class;
 		Method[] methods = userClass.getMethods();
