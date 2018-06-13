@@ -7,6 +7,6 @@ public class NotSatefyThread extends Thread {
 
 	@Override
 	public void run() {
-		Singleton2st.getInstance();
+		LazySingleton.getInstance();
 	}
 }

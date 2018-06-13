@@ -10,27 +10,27 @@ import java.util.Random;
  * @author wuhoujian
  *
  */
-public class Emperor_1 {
+public class EmperorWithMaxNum {
 	private static Integer maxNumOfEmperor = 2;
 	private static List<String> nameList = new ArrayList<String>();
-	private static List<Emperor_1> emperorList = new ArrayList<Emperor_1>();
+	private static List<EmperorWithMaxNum> emperorList = new ArrayList<EmperorWithMaxNum>();
 	private static Integer countNumOfEmperor = 0;
 
 	static {
 		for (int i = 0; i < maxNumOfEmperor; i++) {
-			emperorList.add(new Emperor_1("King_" + i));
+			emperorList.add(new EmperorWithMaxNum("King_" + i));
 		}
 	}
 
-	private Emperor_1() {// 构造函数私有化
+	private EmperorWithMaxNum() {// 构造函数私有化
 
 	}
 
-	private Emperor_1(String name) {
+	private EmperorWithMaxNum(String name) {
 		nameList.add(name);
 	}
 
-	public static Emperor_1 getInstance() {// 提供公有方法供外部访问
+	public static EmperorWithMaxNum getInstance() {// 提供公有方法供外部访问
 		Random rand = new Random();
 		countNumOfEmperor = rand.nextInt(maxNumOfEmperor);
 		return emperorList.get(countNumOfEmperor);

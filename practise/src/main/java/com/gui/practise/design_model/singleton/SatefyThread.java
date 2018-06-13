@@ -7,6 +7,6 @@ public class SatefyThread extends Thread {
 
 	@Override
 	public void run() {
-		Singleton2st_2.getInstance();
+		SingletonWithLock.getInstance();
 	}
 }

@@ -8,22 +8,22 @@ package com.gui.practise.design_model.singleton;
  * @author wuhoujian
  *
  */
-public class Singleton2st_2 {
-	private static Singleton2st_2 singleton = null;
+public class SingletonWithLock {
+	private static SingletonWithLock singleton = null;
 	private static Object lock = new Object();
 
-	private Singleton2st_2() {
+	private SingletonWithLock() {
 
 	}
 
-	public static Singleton2st_2 getInstance() {
+	public static SingletonWithLock getInstance() {
 		// 可处理其他业务逻辑
 
 		synchronized (lock) {
 			System.out.println("当前线程名称为：" + Thread.currentThread().getName());
 
 			if (singleton == null) {
-				singleton = new Singleton2st_2();
+				singleton = new SingletonWithLock();
 			}
 
 			System.out.println(singleton);
