@@ -11,26 +11,37 @@ import java.util.Random;
  *
  */
 public class EmperorWithMaxNum {
+	// 定义最多能产生的实例数量
 	private static Integer maxNumOfEmperor = 2;
+
+	// 皇帝的名称列表
 	private static List<String> nameList = new ArrayList<String>();
+
+	// 皇帝的实例列表
 	private static List<EmperorWithMaxNum> emperorList = new ArrayList<EmperorWithMaxNum>();
+
+	// 皇帝的序号
 	private static Integer countNumOfEmperor = 0;
 
+	// 在静态代码块中产生所有的皇帝对象
 	static {
 		for (int i = 0; i < maxNumOfEmperor; i++) {
 			emperorList.add(new EmperorWithMaxNum("King_" + i));
 		}
 	}
 
-	private EmperorWithMaxNum() {// 构造函数私有化
+	// 构造函数私有化
+	private EmperorWithMaxNum() {
 
 	}
 
+	// 设置皇帝的名称
 	private EmperorWithMaxNum(String name) {
 		nameList.add(name);
 	}
 
-	public static EmperorWithMaxNum getInstance() {// 提供公有方法供外部访问
+	// 提供公有方法供外部访问
+	public static EmperorWithMaxNum getInstance() {
 		Random rand = new Random();
 		countNumOfEmperor = rand.nextInt(maxNumOfEmperor);
 		return emperorList.get(countNumOfEmperor);
