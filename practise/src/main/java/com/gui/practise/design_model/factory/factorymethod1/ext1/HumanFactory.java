@@ -2,6 +2,12 @@ package com.gui.practise.design_model.factory.factorymethod1.ext1;
 
 import com.gui.practise.design_model.factory.factorymethod1.IHuman;
 
+/**
+ * 具体工厂角色，工厂方法模式缩小为简单工厂模式
+ * 
+ * @author wuhoujian
+ *
+ */
 public class HumanFactory {
 
 	@SuppressWarnings("unchecked")
@@ -16,4 +22,5 @@ public class HumanFactory {
 
 		return (T) human;
 	}
+
 }

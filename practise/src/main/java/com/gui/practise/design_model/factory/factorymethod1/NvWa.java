@@ -1,5 +1,9 @@
 package com.gui.practise.design_model.factory.factorymethod1;
 
+import com.gui.practise.design_model.factory.factorymethod1.BlackHuman;
+import com.gui.practise.design_model.factory.factorymethod1.WhiteHuman;
+import com.gui.practise.design_model.factory.factorymethod1.YellowHuman;
+
 /**
  * 工厂方法模式
  * 

@@ -1,12 +1,12 @@
 package com.gui.practise.design_model.strategy;
 
 /**
- * 具体策略执行
+ * 策略枚举场景类
  * 
  * @author wuhoujian
  *
  */
-public class CalcPerformer1 {
+public class Client {
 
 	public static void main(String[] args) {
 		int firstNum = 100;

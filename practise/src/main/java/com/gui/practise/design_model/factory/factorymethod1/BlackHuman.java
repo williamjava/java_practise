@@ -1,5 +1,11 @@
 package com.gui.practise.design_model.factory.factorymethod1;
 
+/**
+ * 具体产品角色 - 黑种人
+ * 
+ * @author wuhoujian
+ *
+ */
 public class BlackHuman implements IHuman {
 
 	public void getColor() {
