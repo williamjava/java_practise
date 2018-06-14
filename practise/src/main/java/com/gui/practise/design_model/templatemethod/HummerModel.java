@@ -7,13 +7,13 @@ package com.gui.practise.design_model.templatemethod;
  *
  */
 public abstract class HummerModel {
-	abstract void start();// 启动
+	protected abstract void start();// 启动
 
-	abstract void engineBoom();// 引擎发出轰鸣声
+	protected abstract void engineBoom();// 引擎发出轰鸣声
 
-	abstract void alarm();// 鸣喇叭
+	protected abstract void alarm();// 鸣喇叭
 
-	abstract void stop();// 停止
+	protected abstract void stop();// 停止
 
 	/**
 	 * 汽车跑起来

@@ -9,22 +9,22 @@ package com.gui.practise.design_model.templatemethod;
 public class HummerH2Model extends HummerModel {
 
 	@Override
-	void start() {
+	protected void start() {
 		System.out.println("H2启动。。。");
 	}
 
 	@Override
-	void engineBoom() {
+	protected void engineBoom() {
 		System.out.println("H2引擎发出轰鸣声。。。");
 	}
 
 	@Override
-	void alarm() {
+	protected void alarm() {
 		System.out.println("H2喇叭响了。。。");
 	}
 
 	@Override
-	void stop() {
+	protected void stop() {
 		System.out.println("H2停止。。。");
 	}
 }
