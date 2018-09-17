@@ -15,20 +15,18 @@ import com.gui.practise.design_model.factory.factorymethod1.YellowHuman;
 public class NvWa {
 
 	public static void main(String[] args) {
-		AbstractHumanFactory humanFactory = new HumanFactory();
-
 		System.out.println("女娲开始创建黄种人了。。。。");
-		YellowHuman yellowHuman = humanFactory.createHuman(YellowHuman.class);
+		YellowHuman yellowHuman = HumanFactory.createHuman(YellowHuman.class);
 		yellowHuman.getColor();
 		yellowHuman.talk();
 
 		System.out.println("女娲开始创建白种人了。。。");
-		WhiteHuman whiteHuman = humanFactory.createHuman(WhiteHuman.class);
+		WhiteHuman whiteHuman = HumanFactory.createHuman(WhiteHuman.class);
 		whiteHuman.getColor();
 		whiteHuman.talk();
 
 		System.out.println("女娲开始创建黑种人了。。。");
-		BlackHuman blackHuman = humanFactory.createHuman(BlackHuman.class);
+		BlackHuman blackHuman = HumanFactory.createHuman(BlackHuman.class);
 		blackHuman.getColor();
 		blackHuman.talk();
 	}
