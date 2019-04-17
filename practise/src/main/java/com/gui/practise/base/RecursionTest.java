@@ -19,7 +19,7 @@ public class RecursionTest {
        if (num == 1) {
            return 1;
        } else {
-           return num * multipy(num - 1);
+           return num + sum(num - 1);
        }
     }
 
