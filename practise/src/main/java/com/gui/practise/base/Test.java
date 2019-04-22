@@ -1,5 +1,7 @@
 package com.gui.practise.base;
 
+import java.math.BigDecimal;
+
 public class Test {
 
 	public static void main(String[] args) {
@@ -10,6 +12,8 @@ public class Test {
 		System.out.println(Math.round(totalPrice * (double) percent / (double) 100));
 
 		System.out.println(3 / 10);
+
+		System.out.println(BigDecimal.ZERO);
 	}
 
 }
