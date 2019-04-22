@@ -13,6 +13,8 @@ public class Test {
 		if (action.contains("出货")) {
 			System.out.println("出货了。。。");
 		}
+
+		System.out.println(4 >> 1);
 	}
 	
 }
