@@ -8,5 +8,8 @@ public class ABTest {
         B b = new B();
         b.method1();
         b.method2();
+
+        String num = "1,234.57";
+        System.out.println(Double.valueOf(num.replace(",","")));
     }
 }
