@@ -9,5 +9,6 @@ public class AbstractDemo {
         child.sayHi();
         child.ask();
         child.answer();
+        System.out.println("test");
     }
 }
