@@ -7,7 +7,7 @@ public class VolatitleTest {
     //    public static volatile int a = 0;
 
     public static void add() {
-        //        a++;
+    //        a++;
         a.getAndIncrement();
     }
 
