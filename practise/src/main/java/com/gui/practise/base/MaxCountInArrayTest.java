@@ -9,7 +9,7 @@ import java.util.Map;
  */
 public class MaxCountInArrayTest {
     public static void main(String[] args) {
-        Integer [] nums = {1,2,3,2,2,2,5,4,2};
+        Integer [] nums = {1,2,3,2,2,2,5,4,2,5,5,5,7,5};
         Map<Integer, Integer> sourceMap = new HashMap<Integer, Integer>();
         for (int i =0;i<nums.length;i++) {
             if (sourceMap.get(nums[i]) == null) {
