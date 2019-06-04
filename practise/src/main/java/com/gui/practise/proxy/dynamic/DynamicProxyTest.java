@@ -15,6 +15,8 @@ import java.lang.reflect.Proxy;
  * JDK动态代理所用到的代理类在程序调用到代理类对象时才由JVM真正创建，JVM根据传进来的 业务实现类对象 以及 方法名 ，动态地创建了一个代理类的class文件并被字节码引擎执行，
  *
  * 然后通过该代理类对象进行方法调用。
+ *
+ * 唯一的缺点：只能代理接口中的方法。
  */
 public class DynamicProxyTest {
     public static void main(String[] args) {
