@@ -14,6 +14,7 @@ public class Test {
 		System.out.println(3 / 10);
 
 		System.out.println(BigDecimal.ZERO);
-	}
 
+		System.out.println(Test.class.getName());
+	}
 }
